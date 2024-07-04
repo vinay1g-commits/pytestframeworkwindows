@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="5" time="5.111" timestamp="2024-05-30T23:37:32.012887" hostname="DESKTOP-UI2KGFP"><testcase classname="python.selenium.dr.justpackageforpytestchec.test_smapling" name="test_sampleE" time="0.004" /><testcase classname="python.selenium.dr.test_pytestexampleAssertion" name="test_sampleA" time="0.001"><failure message="AssertionError: a is not equal to b&#10;assert 5 == 6">def test_sampleA():
+        a=5
+        b=6
+&gt;       assert a==b, "a is not equal to b"
+E       AssertionError: a is not equal to b
+E       assert 5 == 6
+
+python\selenium\dr\test_pytestexampleAssertion.py:14: AssertionError</failure></testcase><testcase classname="python.selenium.dr.test_pytestexampleAssertion" name="test_sampleB" time="0.001" /><testcase classname="python.selenium.dr.test_pytestexampleAssertion" name="test_sampleC" time="0.001"><failure message="AssertionError: first name is not equal to last name&#10;assert False&#10; +  where False = &lt;method-wrapper '__eq__' of str object at 0x0000028EE8126940&gt;('giri')&#10; +    where &lt;method-wrapper '__eq__' of str object at 0x0000028EE8126940&gt; = 'vinay'.__eq__">def test_sampleC():
+        first_name="vinay"
+        last_name="giri"
+&gt;       assert first_name.__eq__(last_name), "first name is not equal to last name"
+E       AssertionError: first name is not equal to last name
+E       assert False
+E        +  where False = &lt;method-wrapper '__eq__' of str object at 0x0000028EE8126940&gt;('giri')
+E        +    where &lt;method-wrapper '__eq__' of str object at 0x0000028EE8126940&gt; = 'vinay'.__eq__
+
+python\selenium\dr\test_pytestexampleAssertion.py:22: AssertionError</failure></testcase><testcase classname="python.selenium.dr.test_sample" name="test_sampleD" time="0.001" /></testsuite></testsuites>

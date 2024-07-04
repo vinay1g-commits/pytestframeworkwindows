@@ -1,0 +1,22 @@
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+
+driver=webdriver.Firefox()
+driver.maximize_window()
+driver.get("https://www.oneindia.com/")
+some=driver.find_element(By.XPATH,"//*[@class='3801821']")
+some2=driver.find_element(By.XPATH,"//*[@class='3801787']")
+some3=driver.find_element(By.XPATH,"(//img[@class='homeSmallImage oilistcontainerimg'])[1]")
+some4=driver.find_element(By.XPATH,"(//img[@class='homeSmallImage oilistcontainerimg'])[17]")
+print(some.size)
+print(some.location)
+print(some2.size)
+print(some2.location)
+print(some3.size)
+print(some3.location)
+print(some4.size)
+print(some4.location)
+print(some4.rect) #returns both size(width&Height) and location(x&y coordinates)
+print(some4.get_attribute("x"))
+print(some4.get_attribute("y"))
+driver.quit()

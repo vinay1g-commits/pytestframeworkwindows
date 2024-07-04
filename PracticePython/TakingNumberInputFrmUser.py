@@ -1,0 +1,5 @@
+print("Enter first num")
+num1=input()
+print("Enter second number")
+num2=input()
+print("multiplication of two numbers is: "+ str(int(num1)*int(num2)))
